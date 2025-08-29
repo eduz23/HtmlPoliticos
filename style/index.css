@@ -1,0 +1,45 @@
+* {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Arsenal", "sans-serif";
+}
+
+.menu {
+    height: 100px;
+    background-color: #112244;
+    margin-top: 0em;
+    display: flex;
+}
+
+.logo {
+    height: 30%;
+    padding-left: 20%;
+    margin-top: 2em;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 10%;
+    margin-top: 2.5em;
+}
+
+li {
+    margin-right: 40%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+li :hover {
+    color: orange;
+    border-bottom: 3px solid orange;
+    padding-bottom: 5px;
+
+}
