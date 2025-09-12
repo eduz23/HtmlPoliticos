@@ -14,9 +14,9 @@
 }
 
 .logo {
-    height: 30%;
+    height: 60%;
     padding-left: 20%;
-    margin-top: 2em;
+    margin-top: 0.9em;
 }
 
 ul {
@@ -43,22 +43,22 @@ li :hover {
     padding-bottom: 5px;
 }
 
-.menu img{
-    height: 50%;
+.menu img {
+    height: 100%;
     margin-left: 10%;
     margin-right: 15%;
 }
 
-#atual{
+#atual {
     color: #FF7B00;
 }
 
-.wallpaper{
+.wallpaper {
     position: relative;
 }
 
-.wallpaper img{
-    height: 20%;
+.wallpaper img {
+    height: 700px;
     width: 100%;
 }
 
@@ -71,7 +71,7 @@ li :hover {
     color: #ffffff;
 }
 
-.buttons{
+.buttons {
     position: absolute;
     bottom: 10%;
     left: 10%;
@@ -79,9 +79,9 @@ li :hover {
     gap: 20px;
 }
 
-.button{
-    background-color: #FF7B00;
-    color: #112244;
+.button {
+    background-color: #ffb922;
+    color: #000000;
     padding: 12px 24px;
     border-radius: 4px;
     cursor: pointer;
@@ -89,16 +89,16 @@ li :hover {
     transition: 0.3s;
 }
 
-.button:hover{
+.button:hover {
     background: #112244;
     color: #ffffff;
 }
 
-.candidato{
+.candidato {
     display: flex;
 }
 
-.candidato img{
+.candidato img {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 25%;
@@ -106,87 +106,94 @@ li :hover {
     margin-left: 10%;
 }
 
-.infos{
+.infos {
     margin: 3%;
     margin-right: 10%;
 }
 
-.infos h3, .faixa_esquerda h3{
+.infos h3,
+.faixa_esquerda h3 {
     color: #FF7B00;
 }
 
-.infos h1, .faixa_esquerda h1{
+.infos h1,
+.faixa_esquerda h1 {
     color: #112244;
     font-weight: 700;
     font-size: 2vw;
     margin-bottom: 2%;
 }
 
-.infos p, .faixa_esquerda p{
+.infos p,
+.faixa_esquerda p {
     font-size: 1.5vw;
     color: #112244;
     line-height: 1.5;
 }
 
-.trajetoria{
+.trajetoria {
     display: flex;
 }
 
-.faixa_esquerda{
+.faixa_esquerda {
     width: 45%;
     padding-top: 5%;
     padding-left: 10%;
 }
 
-.accordeons{
-    width: 55%;
+.accordeons {
+    width: 45%;
     padding-left: 5%;
     padding-right: 10%;
     padding-top: 5%;
 }
 
-details{
+details {
     width: 100%;
     margin: 3%;
-    border:2px solid #FF7B00;
+    border: 2px solid #FF7B00;
     border-radius: 8px;
     background-color: #ff7b0035;
     overflow: hidden;
+    font-size: 1.2vw;
 }
 
-summary{
+summary {
     cursor: pointer;
-    padding: 12px;
+    padding: 20px;
+    font-size: 1.3vw;
     background-color: #FF7B00;
     color: #112244;
     font-weight: bold;
     border-bottom: 1px solid #FF7B00;
+    border-radius: 6px;
 }
 
-summary:hover{
+summary:hover {
     background-color: #112244;
     color: #ffffff;
 }
 
-details p{
+details p {
     padding: 12px;
     background-color: #fffaf5;
     color: #000000;
 }
 
-.valores{
+.valores {
     background-color: #112244;
     margin-top: 5%;
     margin-top: 3%;
     text-align: center;
 }
 
-.valores h3{
+.valores h3 {
     color: #FF7B00;
     padding-bottom: 2%;
+    padding-top: 1%;
 }
 
-.valores h1{
+.valores h1 {
     color: #ffffff;
     font-size: 2.5vw;
     padding-bottom: 2%;
@@ -198,4 +205,173 @@ details p{
     font-size: 1.5vw;
     margin-left: 10%;
     line-height: 1.5
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 3% auto;
+    gap: 3%;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 3%);
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: left;
+    padding: 1.5%;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+}
+
+.card:hover {
+    background-color: rgb(231, 168, 30);
+    scale: 1.03;
+    transition: 0.3s;
+}
+
+#card_icon {
+    width: 10%;
+    padding-bottom: 2%;
+}
+
+#card_title {
+    color: #112244;
+    padding-bottom: 2%;
+}
+
+#card_paragraph {
+    color: #112244;
+    font-size: 1vw;
+}
+
+.footer_social {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.footer_redes_sociais {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.footer_redes_sociais img {
+    width: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.footer_social h3 {
+    color: #112244;
+    padding-top: 2%;
+}
+
+.footer_social p {
+    color: #112244;
+}
+
+.footer_links h3 {
+    color: #112244;
+    font-size: 1.4vw;
+}
+
+.footer_links p,
+.footer_links li {
+    color: #112244;
+}
+
+.footer_links {
+    width: 80%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 10%;
+}
+
+.footer_links>div {
+    flex: 1;
+}
+
+@media(max-width: 768px) {
+
+    @media (max-width: 768px) {
+        .menu {
+            flex-direction: column;
+            height: auto;
+            padding: 10px 0;
+        }
+
+        ul {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .candidato {
+        flex-direction: column;
+    }
+
+    .candidato img {
+        order: 2;
+    }
+
+    .infos {
+        order: 1;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .wallpaper img {
+        height: 300px;
+    }
+
+    .trajetoria {
+        flex-direction: column;
+    }
+
+    .faixa_esquerda {
+        width: 80%;
+    }
+
+    .accordeons {
+        width: 80%;
+        padding-left: 7%;
+    }
+
+    .faixa_esquerda h1 {
+        font-size: 3.5vw;
+    }
+
+    .faixa_esquerda p {
+        font-size: 2.5vw;
+    }
+
+    summary {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    details p {
+        padding: 8px;
+        font-size: 12px;
+    }
 }
