@@ -330,6 +330,44 @@ details p {
 
 @media (max-width: 425px) {
 
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        height: 6%;
+        padding: 10px;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 7px;
+    }
+
+    a {
+        font-size: 3.4vw
+    }
+
+    .wallpaper p {
+        font-size: 6vw;
+    }
+
     .buttons {
         flex-direction: column;
         gap: 10px;
@@ -350,19 +388,22 @@ details p {
 
     .faixa_esquerda {
         width: 80%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .faixa_esquerda h1 {
+        font-size: 4vw;
+    }
+
+    .faixa_esquerda p {
+        font-size: 3.7vw;
     }
 
     .accordeons {
         width: 80%;
         padding-left: 7%;
-    }
-
-    .faixa_esquerda h1 {
-        font-size: 3.5vw;
-    }
-
-    .faixa_esquerda p {
-        font-size: 2.5vw;
     }
 
     summary {
@@ -373,5 +414,47 @@ details p {
     details p {
         padding: 8px;
         font-size: 12px;
+    }
+
+    .infos h1 {
+        font-size: 4vw;
+        line-height: 1.2;
+    }
+
+    .infos p {
+        font-size: 3.7vw;
+    }
+
+
+    .candidato {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .candidato img {
+        border-radius: 5px;
+        border-bottom-left-radius: 5;
+        border-bottom-right-radius: 5;
+        width: 23em;
+        margin-left: 1px;
+    }
+
+    .valores h1{
+        font-size: 3.5vw;
+    }
+
+    .valores p{
+        font-size: 2.8vw;
+    }
+
+    #card_icon{
+        width: 3vw;
+        height: 2.5em;
+    }
+
+    #card_paragraph{
+        font-size: 2.5vw;
+
     }
 }
