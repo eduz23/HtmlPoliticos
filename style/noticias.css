@@ -1,0 +1,114 @@
+* {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Arsenal", "sans-serif";
+}
+
+.menu {
+    height: 100px;
+    background-color: #112244;
+    margin-top: 0em;
+    display: flex;
+}
+
+.logo {
+    height: 60%;
+    padding-left: 20%;
+    margin-top: 0.9em;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 10%;
+    margin-top: 2.5em;
+}
+
+li {
+    margin-right: 40%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+li :hover {
+    color: orange;
+    border-bottom: 3px solid orange;
+    padding-bottom: 5px;
+}
+
+.menu img {
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+.figuras1,
+.figuras2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news1 {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.news1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.news1 figcaption {
+    background-color: #112244;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.figuras2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.news2,
+.news3 {
+    text-align: center;
+}
+
+.news2 img,
+.news3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.news2 figcaption,
+.news3 figcaption {
+    background-color: #112244;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.figuras3{
+    display: flex;
+    width: 100%;
+    gap: 7px;
+}
+
+.news4, .news5, .news6{
+    width: 50%;
+}

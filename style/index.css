@@ -6,6 +6,19 @@
     font-family: "Arsenal", "sans-serif";
 }
 
+#menu-toggle{
+    display: none;
+}
+
+.hamburguer{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #ffff;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
 .menu {
     height: 100px;
     background-color: #112244;
@@ -101,6 +114,7 @@ li :hover {
 .candidato img {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-radius: 10px;
     width: 25%;
     margin-top: 3%;
     margin-left: 10%;
@@ -258,9 +272,8 @@ details p {
 }
 
 .footer_redes_sociais img {
-    width: 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    width: clamp(24px, 3vw, 40px);
+    margin: 10px;
 }
 
 .footer_social h3 {
@@ -297,44 +310,11 @@ details p {
 
 @media(max-width: 768px) {
 
-    @media (max-width: 768px) {
-        .menu {
-            flex-direction: column;
-            height: auto;
-            padding: 10px 0;
-        }
-
-        ul {
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .logo img {
-            height: 50px;
-            margin-bottom: 10px;
-        }
-    }
-
-    .candidato {
-        flex-direction: column;
-    }
-
-    .candidato img {
-        order: 2;
-    }
-
-    .infos {
-        order: 1;
-    }
-}
-
-@media (max-width: 425px) {
-
     .menu {
         flex-direction: column;
         align-items: center;
-        height: 6%;
-        padding: 10px;
+        height: 10%;
+        padding: 15px;
     }
 
     .logo {
@@ -346,10 +326,149 @@ details p {
 
     .logo img {
         height: 50px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 7px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    a{
+        font-size: 2.9vw;
+    }
+
+    .wallpaper img{
+        height: 400px;
+    }
+
+    .wallpaper p{
+        font-size: 4.4vw;
+    }
+
+    .infos h1 {
+        font-size: 3.5vw;
+        line-height: 1.2;
+    }
+
+    .infos h3{
+        font-size: 3.2vw;
+    }
+
+    .infos p {
+        font-size: 2.7vw;
+    }
+    .candidato {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .candidato img {
+        border-radius: 5px;
+        border-bottom-left-radius: 5;
+        border-bottom-right-radius: 5;
+        width: 35em;
+        margin-left: 1px;
+    }
+
+    .faixa_esquerda {
+        width: 80%;
+        align-items: center;
+        margin-left: -50px;
+    }
+
+    .faixa_esquerda h3{
+        font-size: 3.2vw;
+    }
+
+    .faixa_esquerda h1 {
+        font-size: 3.5vw;
+    }
+
+    .faixa_esquerda p {
+        font-size: 2.7vw;
+    }
+
+    .accordeons {
+        width: 90%; 
+        margin: 20px auto;     
+        padding: 0;
+        margin-right: 10%;
+    }
+
+    summary {
+        padding: 12px;
+        font-size: 2.8vw; 
+    }
+
+    details p {
+        padding: 10px;
+        font-size: 2.6vw;
+    }
+
+    .valores p{
+        font-size: 2vw;
+    }
+
+    #card_tittle {
+        text-align: center;
+        margin-top: -30px;
+        margin-left: 18px;
+    }
+
+    #card_paragraph{
+        font-size: 2vw;
+    }
+
+
+
+    .infos {
+        order: 1;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .hamburguer{
+        display: block;
+    }
+
+    #menu-toggle:checked + .hamburguer + ul {
+        display: flex;
+    }
+
+    .menu {
+        align-items: center;
+        height: 6%;
+        padding: 10px;
+        position: relative;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 50px;
         margin: 0 auto;
     }
 
     ul {
+        display: none;
         flex-direction: column;
         align-items: center;
         margin: 0;
@@ -391,6 +510,9 @@ details p {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .faixa_esquerda h1 {
@@ -398,12 +520,14 @@ details p {
     }
 
     .faixa_esquerda p {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
         font-size: 3.7vw;
     }
 
     .accordeons {
         width: 80%;
-        padding-left: 7%;
     }
 
     summary {
@@ -440,21 +564,36 @@ details p {
         margin-left: 1px;
     }
 
-    .valores h1{
+    .valores h1 {
         font-size: 3.5vw;
     }
 
-    .valores p{
-        font-size: 2.8vw;
+    .valores p {
+        font-size: 2.9vw;
     }
 
-    #card_icon{
-        width: 3vw;
-        height: 2.5em;
+    .cards {
+        flex-direction: column;
     }
 
-    #card_paragraph{
-        font-size: 2.5vw;
+    #card_icon {
+        height: 5vw;
+        width: 5vw;
+    }
 
+    #card_tittle {
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    #card_paragraph {
+        color: #112244;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .footer_redes_sociais img {
+        width: clamp(24px, 3vw, 40px);
+        margin: 10px;
     }
 }
