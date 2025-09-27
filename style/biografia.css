@@ -49,3 +49,166 @@ li :hover {
     margin-right: 15%;
 }
 
+.candidato {
+    display: flex;
+}
+
+.candidato .foto {
+    padding-top: 4%;
+    padding-left: 6%;
+    height: 600px;
+}
+
+.candidato .foto img {
+    width: 170%;
+    height: 120%;
+    border-radius: 50px;
+    box-shadow: 10px 15px 50px gray
+}
+
+.infos {
+    padding-left: 15%;
+    padding-top: 5%;
+    font-size: 1.6vw;
+    color: #112244;
+}
+
+.infos p {
+    padding-top: 2%;
+}
+
+.infos h2 {
+    font-size: 1.4vw;
+    color: #ff7b00;
+}
+
+.ancoras {
+    margin-top: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.ancoras a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2vw;
+    padding: 10px 20px;
+    background-color: #112244;
+    border-radius: 8px;
+}
+
+.ancoras a:hover {
+    background-color: #FF7B00;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.candidato .dados {
+    margin-top: 15px;
+    padding: 0;
+    border: none;
+    margin-bottom: 2%;
+}
+
+.candidato .dados h1 {
+    font-size: 1.2em;
+    color: #FF7B00;
+    margin-bottom: 20px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.candidato .dados p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.5;
+}
+
+.candidato .dados li {
+    list-style-type: none;
+    padding: 2px 0;
+    font-size: 0.8em;
+    color: #333;
+}
+
+.candidato .dados li strong {
+    color: #112244;
+    font-weight: 700;
+    margin-right: 5px;
+    display: inline;
+}
+
+.candidato .dados li strong:hover {
+    color: #000;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.trajetoria-politica {
+    background-color: #112244;
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+
+.trajetoria-politica h2 {
+    color: #FF7B00;
+    margin-left: 10%;
+}
+
+.trajetoria-politica p {
+    color: #ffffff;
+    font-size: 1.2vw;
+    margin-left: 10%;
+    width: 80%;
+    line-height: 1.8;
+
+}
+
+.propostas {
+    background-color: #112244;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.propostas h2 {
+    color: #FF7B00;
+    margin-left: 10%;
+}
+
+.propostas h3 {
+    color: #ffffff;
+    margin-left: 10%;
+    padding-top: 1.5%;
+}
+
+.propostas p {
+    color: #ffffff;
+    font-size: 1.2vw;
+    margin-top: 1%;
+    margin-left: 10%;
+    padding-bottom: 2.5%;
+    width: 80%;
+}
+
+ .feitos h2, .valores h2 {
+    color: #FF7B00;
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+
+  .valores ul{
+    padding-bottom: 3%;
+  }
+
+  .valores p, .valores ul {
+    margin-left: 10%;
+    font-size: 1.2vw;
+    line-height: 1.8;
+
+  }
+
+  .feitos ol {
+    margin-left: 10%;
+    font-size: 1.2vw;
+    line-height: 1.8;
+  }
