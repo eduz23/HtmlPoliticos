@@ -100,7 +100,6 @@ li :hover {
 .ancoras a:hover {
     background-color: #FF7B00;
     color: #000000;
-    transition: 0.5s;
 }
 
 .candidato .dados {
@@ -164,24 +163,24 @@ li :hover {
 
 }
 
-.propostas {
+#propostas {
     background-color: #112244;
     padding-bottom: 1%;
     padding-top: 1%;
 }
 
-.propostas h2 {
+#propostas h2 {
     color: #FF7B00;
     margin-left: 10%;
 }
 
-.propostas h3 {
+#propostas h3 {
     color: #ffffff;
     margin-left: 10%;
     padding-top: 1.5%;
 }
 
-.propostas p {
+#propostas p {
     color: #ffffff;
     font-size: 1.2vw;
     margin-top: auto;
@@ -265,7 +264,6 @@ li :hover {
 
 .contato iframe{
     margin-left: 14%;
-    width: 40%;
     width: 70%;
     border-radius: 20px;
     box-shadow: 5px 5px 30px white;
@@ -273,7 +271,7 @@ li :hover {
 
 .footer_social {
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .footer_redes_sociais {
@@ -317,4 +315,160 @@ li :hover {
 
 .footer_links div {
     flex: 1;
+}
+
+/* Tablet - 768px */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin: 0 auto;
+        height: 50px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        font-size: 4vw;
+    }
+
+    .candidato {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .candidato .foto img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .infos {
+        padding-left: 5%;
+        padding-top: 2%;
+        font-size: 3vw;
+    }
+
+    .infos h2 {
+        font-size: 3vw;
+    }
+
+    .ancoras a {
+        font-size: 3vw;
+        padding: 8px 16px;
+    }
+
+    .candidato .dados h1 {
+        font-size: 2vw;
+    }
+
+    .candidato .dados li {
+        font-size: 1.5vw;
+    }
+
+    .trajetoria-politica p,
+    #propostas p,
+    .valores p,
+    #endereco p {
+        font-size: 2.5vw;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .feitos li,
+    .valores li {
+        font-size: 2vw;
+    }
+
+    .contato iframe {
+        width: 90%;
+        margin-left: 5%;
+        height: 300px;
+    }
+}
+
+/* Mobile - 425px */
+@media screen and (max-width: 425px) {
+    .menu {
+        padding-bottom: 5px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    a {
+        font-size: 4.5vw;
+    }
+
+    .candidato .foto img {
+        width: 90%;
+        height: auto;
+    }
+
+    .infos {
+        padding-left: 3%;
+        padding-top: 2%;
+        font-size: 3.5vw;
+    }
+
+    .infos h2 {
+        font-size: 3.5vw;
+    }
+
+    .ancoras a {
+        font-size: 3.5vw;
+        padding: 6px 12px;
+    }
+
+    .candidato .dados h1 {
+        font-size: 3vw;
+    }
+
+    .candidato .dados li {
+        font-size: 2.5vw;
+    }
+
+    .trajetoria-politica p,
+    #propostas p,
+    .valores p,
+    #endereco p {
+        font-size: 3.5vw;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .feitos li,
+    .valores li {
+        font-size: 2.5vw;
+    }
+
+    .contato iframe {
+        width: 95%;
+        margin-left: 2.5%;
+        height: 250px;
+    }
 }
