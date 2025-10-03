@@ -166,8 +166,8 @@ li :hover {
 
 .propostas {
     background-color: #112244;
-    padding-bottom: 3%;
-    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
 
 .propostas h2 {
@@ -184,31 +184,137 @@ li :hover {
 .propostas p {
     color: #ffffff;
     font-size: 1.2vw;
-    margin-top: 1%;
+    margin-top: auto;
     margin-left: 10%;
-    padding-bottom: 2.5%;
+    padding-bottom: 1.5%;
     width: 80%;
 }
 
- .feitos h2, .valores h2 {
+.feitos{
+    padding-top: 2%;
+}
+
+.feitos ol {
+    margin: 15px 40px;
+    padding: 0;
+    padding-left: 5%;
+    list-style-position: inside;
+}
+
+.feitos li {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    padding-left: 4%;
+}
+
+.valores{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.valores ul {
+    list-style: disc;
+    padding-left: 40px;
+    margin-top: 15px;
+
+    display: block;  
+}
+
+.valores li {
+    display: list-item;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: #333;
+    line-height: 1.6;
+   
+}
+
+.valores h2, .feitos h2 {
     color: #FF7B00;
-    margin-left: 10%;
-    margin-top: 3%;
-  }
+    margin-bottom: 10px;
+    padding-left: 10%;
+}
 
-  .valores ul{
+.valores p{
+    padding-left: 10%;
+    font-size: 1.3vw;
+}
+
+.contato{
+    background-color: #112244;
+    padding-top: 3%;
     padding-bottom: 3%;
-  }
+}
 
-  .valores p, .valores ul {
+#endereco{
+    padding-left: 8%;
+}
+
+#endereco h2{
+    color: #FF7B00;
+    font-size: 2.5vw;
+}
+
+#endereco p{
+    color: whitesmoke;
+    font-size: 1.6vw;
+    padding-bottom: 1%;
+}
+
+.contato iframe{
+    margin-left: 14%;
+    width: 40%;
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px white;
+}
+
+.footer_social {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.footer_redes_sociais {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.footer_redes_sociais img {
+    width: clamp(24px, 3vw, 40px);
+    margin: 10px;
+}
+
+.footer_social h3 {
+    color: #112244;
+    padding-top: 2%;
+}
+
+.footer_social p {
+    color: #112244;
+}
+
+.footer_links h3 {
+    color: #112244;
+    font-size: 1.4vw;
+}
+
+.footer_links p,
+.footer_links li {
+    color: #112244;
+}
+
+.footer_links {
+    width: 80%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     margin-left: 10%;
-    font-size: 1.2vw;
-    line-height: 1.8;
+}
 
-  }
-
-  .feitos ol {
-    margin-left: 10%;
-    font-size: 1.2vw;
-    line-height: 1.8;
-  }
+.footer_links div {
+    flex: 1;
+}
